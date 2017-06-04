@@ -1,0 +1,27 @@
+# Recipe routing definition
+recipe.settings_tab:
+  route_name: recipe.settings
+  title: 'Settings'
+  base_route: recipe.settings
+
+entity.recipe.canonical:
+  route_name: entity.recipe.canonical
+  base_route: entity.recipe.canonical
+  title: 'View'
+
+entity.recipe.edit_form:
+  route_name: entity.recipe.edit_form
+  base_route: entity.recipe.canonical
+  title: 'Edit'
+
+entity.recipe.version_history:
+  route_name: entity.recipe.version_history
+  base_route: entity.recipe.canonical
+  title: 'Revisions'
+
+entity.recipe.delete_form:
+  route_name:  entity.recipe.delete_form
+  base_route:  entity.recipe.canonical
+  title: Delete
+  weight: 10
+

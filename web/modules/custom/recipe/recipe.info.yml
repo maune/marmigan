@@ -1,0 +1,5 @@
+name: Recipe
+type: module
+description: Module that handle recipes
+core: 8.x
+package: Marmigan

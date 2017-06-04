@@ -1,0 +1,33 @@
+add recipe entities:
+  title: 'Create new Recipe entities'
+
+administer recipe entities:
+  title: 'Administer Recipe entities'
+  description: 'Allow to access the administration form to configure Recipe entities.'
+  restrict access: true
+
+delete recipe entities:
+  title: 'Delete Recipe entities'
+
+edit recipe entities:
+  title: 'Edit Recipe entities'
+
+access recipe overview:
+  title: 'Access the Recipe overview page'
+
+view published recipe entities:
+  title: 'View published Recipe entities'
+
+view unpublished recipe entities:
+  title: 'View unpublished Recipe entities'
+
+view all recipe revisions:
+  title: 'View all Recipe revisions'
+
+revert all recipe revisions:
+  title: 'Revert all Recipe revisions'
+  description: 'Role requires permission <em>view Recipe revisions</em> and <em>edit rights</em> for recipe entities in question or <em>administer recipe entities</em>.'
+
+delete all recipe revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Recipe revisions</em> and <em>delete rights</em> for recipe entities in question or <em>administer recipe entities</em>.'
