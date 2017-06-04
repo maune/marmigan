@@ -1,0 +1,5 @@
+name: Ingredient
+type: module
+description: Module that handle ingredients
+core: 8.x
+package: Marmigan

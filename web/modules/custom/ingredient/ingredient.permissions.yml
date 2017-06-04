@@ -1,0 +1,33 @@
+add ingredient entities:
+  title: 'Create new Ingredient entities'
+
+administer ingredient entities:
+  title: 'Administer Ingredient entities'
+  description: 'Allow to access the administration form to configure Ingredient entities.'
+  restrict access: true
+
+delete ingredient entities:
+  title: 'Delete Ingredient entities'
+
+edit ingredient entities:
+  title: 'Edit Ingredient entities'
+
+access ingredient overview:
+  title: 'Access the Ingredient overview page'
+
+view published ingredient entities:
+  title: 'View published Ingredient entities'
+
+view unpublished ingredient entities:
+  title: 'View unpublished Ingredient entities'
+
+view all ingredient revisions:
+  title: 'View all Ingredient revisions'
+
+revert all ingredient revisions:
+  title: 'Revert all Ingredient revisions'
+  description: 'Role requires permission <em>view Ingredient revisions</em> and <em>edit rights</em> for ingredient entities in question or <em>administer ingredient entities</em>.'
+
+delete all ingredient revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Ingredient revisions</em> and <em>delete rights</em> for ingredient entities in question or <em>administer ingredient entities</em>.'

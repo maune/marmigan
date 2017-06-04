@@ -1,0 +1,27 @@
+# Ingredient routing definition
+ingredient.settings_tab:
+  route_name: ingredient.settings
+  title: 'Settings'
+  base_route: ingredient.settings
+
+entity.ingredient.canonical:
+  route_name: entity.ingredient.canonical
+  base_route: entity.ingredient.canonical
+  title: 'View'
+
+entity.ingredient.edit_form:
+  route_name: entity.ingredient.edit_form
+  base_route: entity.ingredient.canonical
+  title: 'Edit'
+
+entity.ingredient.version_history:
+  route_name: entity.ingredient.version_history
+  base_route: entity.ingredient.canonical
+  title: 'Revisions'
+
+entity.ingredient.delete_form:
+  route_name:  entity.ingredient.delete_form
+  base_route:  entity.ingredient.canonical
+  title: Delete
+  weight: 10
+

@@ -1,0 +1,5 @@
+entity.ingredient.add_form:
+  route_name: entity.ingredient.add_form
+  title: 'Add Ingredient'
+  appears_on:
+    - entity.ingredient.collection

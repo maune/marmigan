@@ -1,0 +1,14 @@
+
+# Ingredient menu items definition
+entity.ingredient.collection:
+  title: 'Ingredient list'
+  route_name: entity.ingredient.collection
+  description: 'List Ingredient entities'
+  parent: system.admin_structure
+  weight: 100
+
+ingredient.admin.structure.settings:
+  title: Ingredient settings
+  description: 'Configure Ingredient entities'
+  route_name: ingredient.settings
+  parent: system.admin_structure
