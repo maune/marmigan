@@ -211,6 +211,7 @@ class Ingredient extends RevisionableContentEntityBase implements IngredientInte
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the Ingredient entity.'))
       ->setRevisionable(TRUE)
+      ->setRequired(TRUE)
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -227,6 +228,26 @@ class Ingredient extends RevisionableContentEntityBase implements IngredientInte
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+
+    $fields['imgage'] = BaseFieldDefinition::create('image')
+      ->setLabel(t('Image'))
+      ->setRevisionable(TRUE)
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    $fields['description'] = BaseFieldDefinition::create('text_with_summary')
+      ->setLabel(t('Description'))
+      ->setDescription(t('The description of the Ingredient.'))
+      ->setRevisionable(TRUE)
+      ->setDefaultValue('')
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    $fields['validation'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Validation status'))
+      ->setDescription(t('A boolean indicating whether the Ingredient was validated by a moderator.'))
+      ->setRevisionable(TRUE)
+      ->setDefaultValue(TRUE);
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))

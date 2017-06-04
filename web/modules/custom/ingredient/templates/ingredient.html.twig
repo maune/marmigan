@@ -16,6 +16,7 @@
  */
 #}
 <div{{ attributes.addClass('ingredient') }}>
+  {{ kint(content|keys) }}
   {% if content %}
     {{- content -}}
   {% endif %}

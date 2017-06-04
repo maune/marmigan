@@ -1,0 +1,10 @@
+name: Ingredient
+description: 'Module that handle ingredients'
+type: module
+core: 8.x
+dependencies:
+  - ds
+  - image
+  - ingredient
+  - text
+package: Marmigan

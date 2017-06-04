@@ -1,0 +1,46 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+  module:
+    - image
+    - ingredient
+    - text
+id: ingredient.ingredient.default
+targetEntityType: ingredient
+bundle: ingredient
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  imgage:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

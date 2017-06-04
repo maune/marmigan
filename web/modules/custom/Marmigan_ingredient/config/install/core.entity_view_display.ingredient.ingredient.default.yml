@@ -1,0 +1,55 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+  module:
+    - ds
+    - image
+    - ingredient
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - imgage
+        - name
+        - description
+id: ingredient.ingredient.default
+targetEntityType: ingredient
+bundle: ingredient
+mode: default
+content:
+  description:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  imgage:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true
